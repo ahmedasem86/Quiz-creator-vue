@@ -2,7 +2,7 @@
     <div class="m-3">
         <b-card
             :title="question.title"
-            :img-src="`http://quiz.loc/storage/questionImages/${question.image}`"
+            :img-src="`http://quiz-creator-api.pentesttools.net/storage/questionImages/${question.image}`"
             img-alt="https://vuejsdevelopers.com/images/posts/vue-laravel-crud.jpg"
             img-top
             tag="article"

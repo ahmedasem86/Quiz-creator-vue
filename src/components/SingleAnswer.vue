@@ -3,7 +3,7 @@
         <b-card
             @click="isSelected = true"
             :title="answer.text"
-            :img-src="`http://quiz.loc/storage/answerImages/${answer.image}`"
+            :img-src="`http://quiz-creator-api.pentesttools.net/storage/answerImages/${answer.image}`"
             img-alt="Image"
             img-top
             tag="article"

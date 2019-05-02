@@ -22,7 +22,7 @@ export default {
         }
     },
     mounted () {
-        axios.get('http://quiz.loc/user/questions')
+        axios.get('http://quiz-creator-api.pentesttools.net/user/questions')
         .then(res => {
             this.questions = res.data.data
         })

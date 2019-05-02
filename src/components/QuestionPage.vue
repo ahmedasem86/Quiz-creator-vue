@@ -48,7 +48,7 @@ export default {
         }
     },
     mounted () {
-        axios.get(`http://quiz.loc/user/questions/${this.$route.params.id}`)
+        axios.get(`http://quiz-creator-api.pentesttools.net/user/questions/${this.$route.params.id}`)
         .then(res => {
             this.question = res.data.data
         })
@@ -66,7 +66,7 @@ export default {
             }
         },
         submit () {
-            axios.post(`http://quiz.loc/user/questions/submission`, {...this.form})
+            axios.post(`http://quiz-creator-api.pentesttools.net/user/questions/submission`, {...this.form})
             .then(() => {
                 let answer = this.question.answers.find(a => a.id == this.form.answer_id)
                 // 1 == redirect to static url
