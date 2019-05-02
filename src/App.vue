@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <router-view/>
-    <h4>copy rights reserved</h4>
   </div>
 </template>
 
